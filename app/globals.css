@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 0 0% 100%;
+        --foreground: 222.2 84% 4.9%;
+    }
+
+    .dark {
+        --background: 222.2 84% 4.9%;
+        --foreground: 210 40% 98%;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        @apply bg-white text-slate-900 dark:bg-[#0a0a0a] dark:text-slate-100;
+        background-image: radial-gradient(rgba(100, 100, 100, 0.1) 1px, transparent 1px);
+        background-size: 24px 24px;
+    }
+
+    /* ВОТ ЗДЕСЬ БЫЛА ОШИБКА */
+    /* Я заменил несуществующий border-border на обычный border-slate-200 */
+    * {
+        @apply border-slate-200 dark:border-slate-800;
+    }
+}
