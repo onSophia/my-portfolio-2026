@@ -40,7 +40,7 @@ export default function Home() {
             <footer id="contact" className="py-24 border-t border-slate-200 dark:border-slate-800 text-center">
                 <h2 className="text-3xl font-bold mb-6">Готовы обсудить проект?</h2>
                 <p className="text-slate-600 dark:text-slate-400 mb-8 max-w-lg mx-auto">
-                    Свяжитесь со мной в Telegram или по почте.
+                    Свяжитесь со мной в Telegram.
                 </p>
                 <div className="flex justify-center gap-6 mt-8">
                     <a href={SITE_DATA.contact.telegram} className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
