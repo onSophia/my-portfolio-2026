@@ -2,18 +2,18 @@
 import { motion } from "framer-motion";
 import { SITE_DATA } from "@/lib/data";
 
-// Настройки анимации контейнера
+
 const container = {
     hidden: { opacity: 0 },
     show: {
         opacity: 1,
         transition: {
-            staggerChildren: 0.1, // Задержка между появлением каждого элемента
+            staggerChildren: 0.1,
         },
     },
 };
 
-// Настройки анимации для каждого элемента
+
 const item = {
     hidden: { opacity: 0, y: 20, scale: 0.8 },
     show: { opacity: 1, y: 0, scale: 1 },

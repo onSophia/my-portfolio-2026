@@ -3,7 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 
-// Настройка шрифтов
+
 const inter = Inter({
     subsets: ["latin", "cyrillic"],
     variable: "--font-sans",
@@ -25,7 +25,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        // Добавляем suppressHydrationWarning в html, чтобы расширения типа Dark Reader не вызывали ошибок
+
         <html lang="ru" suppressHydrationWarning={true}>
             <body
                 className={`${inter.variable} ${mono.variable} font-sans antialiased min-h-screen flex flex-col bg-white text-slate-900 dark:bg-[#0a0a0a] dark:text-slate-100 transition-colors duration-300`}

@@ -25,7 +25,7 @@ export function Pricing() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ delay: idx * 0.2 }}
-                            whileHover={{ y: -10 }} // Подпрыгивание при наведении
+                            whileHover={{ y: -10 }}
                             className={`relative p-8 rounded-3xl border ${plan.popular
                                 ? "border-blue-500 bg-blue-50/50 dark:bg-blue-900/10 shadow-2xl shadow-blue-500/20"
                                 : "border-slate-200 dark:border-slate-800 bg-white dark:bg-[#111]"

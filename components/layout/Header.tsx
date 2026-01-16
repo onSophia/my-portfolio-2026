@@ -12,7 +12,7 @@ const navItems = [
 
 export function Header() {
     return (
-        // sticky + backdrop-blur = эффект стекла
+
         <motion.header
             initial={{ y: -100 }}
             animate={{ y: 0 }}

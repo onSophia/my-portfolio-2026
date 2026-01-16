@@ -3,16 +3,16 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Github, ExternalLink, Code2 } from "lucide-react";
 
-// Генерируем страницы заранее
+
 export function generateStaticParams() {
     return SITE_DATA.projects.map((project) => ({
         slug: project.slug,
     }));
 }
 
-// В Next.js 15/16 params — это Promise, поэтому функция должна быть async
+
 export default async function ProjectPage(props: { params: Promise<{ slug: string }> }) {
-    const params = await props.params; // <--- ВАЖНО: Дожидаемся параметров
+    const params = await props.params;
     const project = SITE_DATA.projects.find((p) => p.slug === params.slug);
 
     if (!project) {

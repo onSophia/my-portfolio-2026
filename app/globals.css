@@ -23,8 +23,6 @@
         background-size: 24px 24px;
     }
 
-    /* ВОТ ЗДЕСЬ БЫЛА ОШИБКА */
-    /* Я заменил несуществующий border-border на обычный border-slate-200 */
     * {
         @apply border-slate-200 dark:border-slate-800;
     }

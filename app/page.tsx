@@ -32,7 +32,7 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* Теперь Сертификаты живут отдельно, и ошибка nesting исчезнет */}
+            {/*  Сертификаты  */}
             <Certificates />
 
             <Projects />

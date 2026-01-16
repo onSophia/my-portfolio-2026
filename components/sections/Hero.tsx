@@ -58,10 +58,12 @@ export function Hero() {
                         Смотреть работы
                         <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                     </a>
-                    <button className="flex items-center gap-2 px-6 py-3 border border-slate-200 dark:border-slate-800 rounded-xl font-medium hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors">
-                        <Download size={18} />
+                    <a href="/cv.docx"
+                        download="Sofia_CV"
+                        target="_blank"
+                        className="flex items-center gap-2 px-6 py-3 border border-slate-200 dark:border-slate-800 rounded-xl font-medium hover:bg-slate-100 dark:hover:bg-slate-900 transition-colors">
                         Скачать CV
-                    </button>
+                    </a>
                 </motion.div>
             </div>
         </section>

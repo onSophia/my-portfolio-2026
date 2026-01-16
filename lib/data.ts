@@ -33,7 +33,6 @@ export const SITE_DATA = {
         { category: "Tools", items: ["Figma", "Git", "VS Code", "Netlify", "Vercel"] },
     ],
     projects: [
-        // --- 5 САЙТОВ ---
         {
             slug: "gaming-portal",
             category: "Website",
@@ -41,7 +40,7 @@ export const SITE_DATA = {
             description: "Многофункциональный зоомагазин с интеграцией платформы для поиска дома бездомным животным. Реализован интерактивный 3D-фон, динамический поиск/фильтрация товаров, система «Избранного» и микро-анимации интерфейса.",
             fullDescription: "Интеграция библиотеки Three.js для создания генеративного фона с частицами и GSAP для плавного появления карточек. Реализована логика «умной» корзины с сохранением состояния в localStorage и звуковым сопровождением.",
             tags: ["Three.js", "GSAP", "JS"],
-            links: { demo: "https://petsuppliesforportfoliosk.netlify.app/", repo: "#" },
+            links: { demo: "https://petsuppliesforportfoliosk.netlify.app/", repo: "https://github.com/onSophia/my-portfolio-7/blob/main/index.html" },
             challenge: "Реализация математического расчета траектории полета товара в корзину (getBoundingClientRect) и оптимизация рендеринга 3D-сцены поверх HTML-контента.",
             image: "/project-site.jpg"
         },
@@ -53,7 +52,7 @@ export const SITE_DATA = {
             description: "Уютный SPA-сайт кофейни с функционалом интернет-магазина. Реализован динамический каталог напитков и десертов, «умная» корзина с подсчетом стоимости добавок (сиропы, топинги) и полностью адаптивный интерфейс.",
             fullDescription: "Использование CSS Grid для построения нестандартной сетки меню. Реализация анимаций появления контента через Intersection Observer API для повышения производительности при скролле.",
             tags: ["HTML", "CSS", "Algorithms"],
-            links: { demo: "https://mamascoffeportfoliosk.netlify.app/", repo: "#" },
+            links: { demo: "https://mamascoffeportfoliosk.netlify.app/", repo: "https://github.com/onSophia/my-portfolio-6/blob/main/index.html" },
             challenge: "Реализация калькулятора стоимости напитка с учетом разных модификаторов (размер, молоко, добавки) без использования Backend-логики.",
             image: "/project-site2.jpg"
         },
@@ -64,7 +63,7 @@ export const SITE_DATA = {
             description: "Тематический SPA-сайт доставки еды с уникальным дизайном. Реализован динамический рендеринг каталога из JSON-структуры, мгновенная фильтрация категорий без перезагрузки страницы и полноценная логика корзины с управлением заказом.",
             fullDescription: "Использование backdrop-filter для создания эффекта матового стекла (Glassmorphism) в интерфейсе. Реализация кастомного прелоадера (Loader) с анимацией <ворот> при входе на сайт.",
             tags: ["HTML5", "CSS3", "JS"],
-            links: { demo: "https://ninjagosushiforportfoliosk.netlify.app/", repo: "#" },
+            links: { demo: "https://ninjagosushiforportfoliosk.netlify.app/", repo: "https://github.com/onSophia/my-portfolio-5/blob/main/index.html" },
             challenge: "Реализация State Management (управления состоянием) корзины и ее полная синхронизация с DOM-деревом на чистом JavaScript без фреймворков.",
             image: "/project-site3.jpg"
         },
@@ -75,22 +74,43 @@ export const SITE_DATA = {
             description: "Премиальный лендинг для агента по недвижимости с темной темой. Реализован инерционный скролл (Smooth Scroll), параллакс-эффекты, динамическая бегущая строка и каталог объектов с детальным просмотром в модальных окнах.",
             fullDescription: "Интеграция библиотеки Lenis для плавности прокрутки и GSAP ScrollTrigger для сложных анимаций появления контента. Верстка выполнена с использованием CSS Variables для легкой смены цветовых акцентов.",
             tags: ["HTML5", "CSS3", "GSAP / Lenis"],
-            links: { demo: "https://kharkivrealtorgulyakoroleva.netlify.app/", repo: "#" },
+            links: { demo: "https://kharkivrealtorgulyakoroleva.netlify.app/", repo: "https://github.com/onSophia/my-portfolio-4/blob/main/index.html" },
             challenge: "Синхронизация кастомного плавного скролла с анимациями триггеров (ScrollTrigger) и реализация динамической смены контента в модальном окне через Data-атрибуты.",
             image: "/project-site4.jpg"
         },
         {
-            slug: "corporate-site", // Уникальная ссылка
+            slug: "corporate-site",
             category: "Website",
             title: "Корпоративный сайт «SK.Future»",
             description: "Многостраничный веб-ресурс для IT-компании с каталогом услуг и блогом. Реализована сложная адаптивная верстка, интерактивные формы обратной связи (валидация на JS) и плавные анимации интерфейса.",
             fullDescription: "Использование препроцессора SCSS для модульной архитектуры стилей и методологии БЭМ. Настройка семантической верстки для SEO-оптимизации.",
             tags: ["HTML5", "SCSS", "JS"],
-            links: { demo: "https://futureprojectforsk.netlify.app/", repo: "#" },
+            links: { demo: "https://futureprojectforsk.netlify.app/", repo: "https://github.com/onSophia/my-portfolio-3/blob/main/index.html" },
             challenge: "Реализация Pixel Perfect верстки со сложной геометрией (Glassmorphism) и ее полная адаптация под мобильные устройства.",
             image: "/project-site5.jpg"
         },
-        // --- 5 ПИСЕМ (EMAIL) ---
+        {
+            slug: "admin-site",
+            category: "Website",
+            title: "CRM-система управления бизнесом «Nexus Admin Pro»",
+            description: "Адаптивная панель администратора (SPA) для управления заказами и клиентской базой. Реализован полноценный UI/UX интерфейс с поддержкой переключения тем (Dark/Light Mode), динамическим обновлением статистики и адаптивностью под мобильные устройства. Интерфейс работает без перезагрузки страниц.",
+            fullDescription: "Разработка SPA-архитектуры (Single Page Application) на чистом JavaScript без использования фреймворков. Реализована система маршрутизации между вкладками («Дашборд», «Заказы», «Клиенты») через манипуляцию DOM-классами. Внедрена система темизации через CSS Custom Properties (переменные :root), позволяющая мгновенно переключать цветовую схему приложения. Данные таблиц и статистики рендерятся динамически на основе JavaScript-объектов.",
+            tags: ["HTML5", "SCSS", "JS"],
+            links: { demo: "https://nexusadminproforsk.netlify.app/", repo: "https://github.com/onSophia/my-portfolio-2/blob/main/index.html" },
+            challenge: "Ручная отрисовка интерактивных графиков на Canvas API. Вместо использования готовых библиотек, реализован собственный движок визуализации данных на HTML5 Canvas. Написан алгоритм расчета координат точек графика (ctx.lineTo) и динамической заливки градиентом (createLinearGradient) в зависимости от размера контейнера и входящего массива данных.",
+            image: "/project-site6.jpg"
+        },
+        {
+            slug: "kazino-site",
+            category: "Website",
+            title: "Игровая платформа «ROYAL BET»",
+            description: "Адаптивный веб-ресурс, симулирующий работу онлайн-казино с функционалом административной панели. Реализована система «умной» фильтрации игр, динамическое управление вероятностью выигрыша (RTP) и сохранение состояния баланса пользователя. Интерфейс полностью адаптирован под мобильные устройства (Mobile First).",
+            fullDescription: "Разработка SPA-подобного интерфейса на чистом JavaScript без использования тяжелых фреймворков. Реализована имитация серверного отклика для игрового процесса (спинов) с использованием setTimeout. Внедрена логика сохранения пользовательского баланса в localStorage, что позволяет удерживать прогресс между перезагрузками страницы.",
+            tags: ["HTML5", "SCSS", "JS", "LocalStorage"],
+            links: { demo: "https://kazinoforsk.netlify.app/", repo: "https://github.com/onSophia/my-portfolio-1/blob/main/index.html" },
+            challenge: "Реализация алгоритма RTP Control (Return to Player): Разработка логики административного ползунка, который в реальном времени изменяет математическую вероятность выпадения выигрышной комбинации в скрипте. Интеграция визуальной шкалы «Win/Lose», динамически меняющей цвет в зависимости от <щедрости> настроек.",
+            image: "/project-site7.jpg"
+        },
         {
             slug: "email-welcome",
             category: "Email",
@@ -98,7 +118,7 @@ export const SITE_DATA = {
             description: "Кроссбраузерный шаблон для маркетинговых рассылок. Верстка выполнена на таблицах (Table-based layout) для обеспечения максимальной совместимости с почтовыми клиентами (Outlook, Gmail, Apple Mail). Реализована адаптивная структура, трансформирующаяся под мобильные устройства.",
             fullDescription: "Использование XHTML 1.0 Transitional и инлайн-стилей для гарантированного отображения стилей во всех клиентах. Реализация CSS-сбросов для Microsoft Outlook (свойства mso-) и медиа-запросов для перестроения колонок товаров в вертикальный стек на смартфонах.",
             tags: ["HTML Table", "Inline CSS", "Mobile First"],
-            links: { demo: "https://htmlnewsletterr.netlify.app/", repo: "#" },
+            links: { demo: "https://htmlnewsletterr.netlify.app/", repo: "https://github.com/onSophia/my-portfolio-8/blob/main/index.html" },
             challenge: "Обеспечение корректного рендеринга в старых версиях MS Outlook и реализация адаптивной сетки (Stacking Columns) без использования современных Flexbox/Grid.",
             image: "/project-email.jpg"
         },
@@ -109,7 +129,7 @@ export const SITE_DATA = {
             description: "Кроссбраузерный шаблон для маркетинговых рассылок. Верстка выполнена на таблицах (Table-based layout) для обеспечения максимальной совместимости с почтовыми клиентами (Outlook, Gmail, Apple Mail). Реализована адаптивная структура, трансформирующаяся под мобильные устройства.",
             fullDescription: "Использование XHTML 1.0 Transitional и инлайн-стилей для гарантированного отображения стилей во всех клиентах. Реализация CSS-сбросов для Microsoft Outlook (свойства mso-) и медиа-запросов для перестроения колонок товаров в вертикальный стек на смартфонах.",
             tags: ["HTML Table", "Inline CSS", "Mobile First"],
-            links: { demo: "https://htmlnewsletterrr.netlify.app/", repo: "#" },
+            links: { demo: "https://htmlnewsletterrr.netlify.app/", repo: "https://github.com/onSophia/my-portfolio-9/blob/main/index.html" },
             challenge: "Обеспечение корректного рендеринга в старых версиях MS Outlook и реализация адаптивной сетки (Stacking Columns) без использования современных Flexbox/Grid.",
             image: "/project-email2.jpg"
         },
@@ -120,7 +140,7 @@ export const SITE_DATA = {
             description: "Кроссбраузерный шаблон для маркетинговых рассылок. Верстка выполнена на таблицах (Table-based layout) для обеспечения максимальной совместимости с почтовыми клиентами (Outlook, Gmail, Apple Mail). Реализована адаптивная структура, трансформирующаяся под мобильные устройства.",
             fullDescription: "Использование XHTML 1.0 Transitional и инлайн-стилей для гарантированного отображения стилей во всех клиентах. Реализация CSS-сбросов для Microsoft Outlook (свойства mso-) и медиа-запросов для перестроения колонок товаров в вертикальный стек на смартфонах.",
             tags: ["HTML Table", "Inline CSS", "Email Dev"],
-            links: { demo: "https://htmlnewsletterrrr.netlify.app/", repo: "#" },
+            links: { demo: "https://htmlnewsletterrrr.netlify.app/", repo: "https://github.com/onSophia/my-portfolio-10/blob/main/index.html" },
             challenge: "Обеспечение корректного рендеринга в старых версиях MS Outlook и реализация адаптивной сетки (Stacking Columns) без использования современных Flexbox/Grid.",
             image: "/project-email3.jpg"
         },
@@ -131,7 +151,7 @@ export const SITE_DATA = {
             description: "Кроссбраузерный шаблон для маркетинговых рассылок. Верстка выполнена на таблицах (Table-based layout) для обеспечения максимальной совместимости с почтовыми клиентами (Outlook, Gmail, Apple Mail). Реализована адаптивная структура, трансформирующаяся под мобильные устройства.",
             fullDescription: "Использование XHTML 1.0 Transitional и инлайн-стилей для гарантированного отображения стилей во всех клиентах. Реализация CSS-сбросов для Microsoft Outlook (свойства mso-) и медиа-запросов для перестроения колонок товаров в вертикальный стек на смартфонах.",
             tags: ["HTML Table", "Inline CSS", "Email Dev"],
-            links: { demo: "https://htmlnewsletterrrrr.netlify.app/", repo: "#" },
+            links: { demo: "https://htmlnewsletterrrrr.netlify.app/", repo: "https://github.com/onSophia/my-portfolio-11/blob/main/index.html" },
             challenge: "Обеспечение корректного рендеринга в старых версиях MS Outlook и реализация адаптивной сетки (Stacking Columns) без использования современных Flexbox/Grid.",
             image: "/project-email4.jpg"
         },
@@ -142,7 +162,7 @@ export const SITE_DATA = {
             description: "Кроссбраузерный шаблон для маркетинговых рассылок. Верстка выполнена на таблицах (Table-based layout) для обеспечения максимальной совместимости с почтовыми клиентами (Outlook, Gmail, Apple Mail). Реализована адаптивная структура, трансформирующаяся под мобильные устройства.",
             fullDescription: "Использование XHTML 1.0 Transitional и инлайн-стилей для гарантированного отображения стилей во всех клиентах. Реализация CSS-сбросов для Microsoft Outlook (свойства mso-) и медиа-запросов для перестроения колонок товаров в вертикальный стек на смартфонах.",
             tags: ["HTML Table", "Inline CSS", "Email Dev"],
-            links: { demo: "https://htmlnewsletterrrrrr.netlify.app/", repo: "#" },
+            links: { demo: "https://htmlnewsletterrrrrr.netlify.app/", repo: "https://github.com/onSophia/my-portfolio-12/blob/main/index.html" },
             challenge: "Обеспечение корректного рендеринга в старых версиях MS Outlook и реализация адаптивной сетки (Stacking Columns) без использования современных Flexbox/Grid.",
             image: "/project-email5.jpg"
         },

@@ -8,10 +8,10 @@ export function ModeToggle() {
     const { theme, setTheme } = useTheme()
     const [mounted, setMounted] = React.useState(false)
 
-    // Ждем, пока компонент загрузится в браузере, чтобы избежать ошибок
+
     React.useEffect(() => setMounted(true), [])
 
-    // Пока не загрузилось - показываем пустую заглушку
+
     if (!mounted) {
         return <div className="w-9 h-9" />
     }
