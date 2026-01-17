@@ -34,6 +34,17 @@ export const SITE_DATA = {
     ],
     projects: [
         {
+            slug: "sofa-site",
+            category: "Website",
+            title: "E-commerce проект «Sofa Store»",
+            description: "Современный Landing Page для интернет-магазина мягкой мебели с акцентом на UX и чистый дизайн. Реализован адаптивный интерфейс, интерактивная фильтрация товаров и система мгновенных уведомлений.",
+            fullDescription: "Сайт представляет собой витрину премиальной мебели. Включает в себя динамический хедер, меняющий стиль при скролле, функционал <умного> поиска с авто-скроллом к нужной секции и интерактивный блок FAQ (аккордеон). Реализована имитация корзины и система всплывающих уведомлений (Toast) без использования сторонних библиотек.",
+            tags: ["HTML5", "CSS3", "JS"],
+            links: { demo: "https://sofadivanforsk.netlify.app/", repo: "https://github.com/onSophia/my-portfolio-13/blob/main/index.html" },
+            challenge: "Реализация кастомной системы уведомлений (Toast Notifications) и логики поиска по ключевым словам на чистом JavaScript. Верстка сложных сеток (CSS Grid) для корректного отображения карточек товаров и цветовых фильтров на всех типах устройств.",
+            image: "/project-site8.jpg"
+        },
+        {
             slug: "gaming-portal",
             category: "Website",
             title: "Социальный E-commerce проект «PawShop»",
