@@ -28,7 +28,7 @@ export const SITE_DATA = {
     ],
     skills: [
         { category: "Frontend", items: ["React", "Next.js", "Tailwind CSS", "HTML/CSS", "JS"] },
-        { category: "Engineering", items: ["C / C++", "C#", "OOP", "Algorithms"] }, // Добавил инженерный блок
+        { category: "Engineering", items: ["C / C++", "C#", "OOP", "Algorithms"] },
         { category: "Email Dev", items: ["HTML Email", "MJML", "Litmus", "Responsive"] },
         { category: "Tools", items: ["Figma", "Git", "VS Code", "Netlify", "Vercel"] },
     ],
@@ -213,6 +213,14 @@ export const SITE_DATA = {
             features: ["React", "API", "База данных", "Срок: от 2 недель"],
             icon: Smartphone,
             popular: false,
+        },
+        {
+            title: "Telegram Mini App",
+            price: "от 3 000 грн",
+            description: "Полноценный магазин или приложение внутри Telegram.",
+            features: ["Next.js + Node.js", "Web App", "Админ-панель", "Срок: от 10 дней"],
+            icon: Smartphone,
+            popular: true,
         },
     ],
     contact: {

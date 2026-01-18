@@ -8,7 +8,7 @@ import { SITE_DATA } from "@/lib/data";
 
 export default function Home() {
     return (
-        <main className="max-w-4xl mx-auto px-6 sm:px-12 overflow-hidden">
+        <main className="max-w-7xl mx-auto px-6 sm:px-12 overflow-hidden">
             <header className="flex justify-between items-center py-6">
                 <div className="font-mono font-bold text-xl tracking-tighter cursor-pointer">
                     DEV.PORTFOLIO
