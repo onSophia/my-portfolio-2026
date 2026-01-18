@@ -207,20 +207,20 @@ export const SITE_DATA = {
             popular: true,
         },
         {
-            title: "Веб-приложение",
-            price: "от 9 000 грн",
-            description: "Функциональный сайт на React/Next.js.",
-            features: ["React", "API", "База данных", "Срок: от 2 недель"],
-            icon: Smartphone,
-            popular: false,
-        },
-        {
             title: "Telegram Mini App",
             price: "от 3 000 грн",
             description: "Полноценный магазин или приложение внутри Telegram.",
             features: ["Next.js + Node.js", "Web App", "Админ-панель", "Срок: от 10 дней"],
             icon: Smartphone,
             popular: true,
+        },
+        {
+            title: "Веб-приложение",
+            price: "от 9 000 грн",
+            description: "Функциональный сайт на React/Next.js.",
+            features: ["React", "API", "База данных", "Срок: от 2 недель"],
+            icon: Smartphone,
+            popular: false,
         },
     ],
     contact: {
