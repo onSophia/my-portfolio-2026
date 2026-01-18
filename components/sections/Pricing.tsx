@@ -6,8 +6,7 @@ import { Check } from "lucide-react";
 export function Pricing() {
     return (
         <section id="pricing" className="py-24 w-full">
-            {/* 👇 1. ЭТОТ DIV КОНТРОЛИРУЕТ ШИРИНУ */}
-            {/* max-w-[1440px] делает секцию широкой. Можно поставить max-w-full для 100% ширины */}
+
             <div className="max-w-[1440px] mx-auto px-4 md:px-8">
 
                 <motion.h2
@@ -19,7 +18,7 @@ export function Pricing() {
                     <span className="text-blue-500 font-mono text-xl">03.</span> Цены и Услуги
                 </motion.h2>
 
-                {/* 👇 2. СЕТКА НАСТРОЕНА НА 4 КОЛОНКИ (lg:grid-cols-4) */}
+
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                     {SITE_DATA.pricing.map((plan, idx) => {
                         const Icon = plan.icon;
@@ -54,7 +53,7 @@ export function Pricing() {
                                     {plan.description}
                                 </p>
 
-                                {/* flex-grow прижимает кнопку к низу, если контент разной высоты */}
+
                                 <ul className="space-y-3 mb-8 flex-grow">
                                     {plan.features.map((feature, i) => (
                                         <li key={i} className="flex items-start gap-2 text-sm text-slate-700 dark:text-slate-300">
